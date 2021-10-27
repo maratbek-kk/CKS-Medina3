@@ -12,10 +12,6 @@ body {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
 
 .header-bottom {
   display: flex;
@@ -57,7 +53,8 @@ li {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-li {
+.header_list {
+  list-style: none;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -96,7 +93,7 @@ li {
   cursor: pointer;
 }
 
-li:hover {
+.header_list:hover {
   color: #05345e;
   font-weight: 500;
   transform: scale(1.1);
@@ -155,7 +152,7 @@ li:hover {
 }
 
 .container {
-  max-width: 1470px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -234,8 +231,8 @@ li:hover {
 .text1 p {
   font-family: "Open Sans Condensed", sans-serif;
   color: black;
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 18px;
+  margin: 10px 0 0;
 }
 
 .text1 h1 {
@@ -244,15 +241,15 @@ li:hover {
   font-size: 20px;
 }
 
-.text1 span {
+.text1 a {
   font-family: "Open Sans Condensed", sans-serif;
   color: rgb(72, 92, 152);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .card img {
   width: 50%;
-  height: 100;
+  height: 100%;
   margin-right: 30px;
 }
 
@@ -266,7 +263,8 @@ li:hover {
   font-family: "Open Sans Condensed", sans-serif;
   color: rgb(50, 68, 122);
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  margin-top: 5px;
 }
 
 .publication {
@@ -279,24 +277,66 @@ li:hover {
   font-family: "Open Sans Condensed", sans-serif;
   color: rgb(50, 68, 122);
   font-size: 30px;
-  margin: 30px 0;
+  margin: 40px 0 20px;
   text-align: center;
 }
 
-.colendar {
-  padding: 30px;
+.development-blocks {
+  padding: 5px;
   width: 250px;
   height: 250px;
   border: 2px solid rgb(50, 68, 122);
 }
 
-.img2 {
-  background-image: url("../img/1.jpg");
-  width: 250px;
-  height: 250px;
+.gallery-block {
+  background-image: url("images/gallery/gallery-photo-10.jpg");
   background-size: cover;
+}
+
+.gallery-pagetitle {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: rgb(50, 68, 122);
+  font-size: 30px;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.gallery-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto 30px;
+}
+
+.img-wrap {
+  width: 400px;
+  height: 300px;
   border: 2px solid rgb(50, 68, 122);
 }
+.gallery-img {
+  width: 400px;
+  height: 300px;
+}
+
+.archive-list_item {
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.archive_link {
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: rgb(50, 68, 122);
+  font-size: 14px;
+}
+
+.archive-more_link {
+  text-decoration: underline;
+  padding-left: 100px;
+}
+
+
 
 .section2 {
   background-color: rgb(50, 68, 122);
